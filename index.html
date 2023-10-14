@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./assets/spotifylogo.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="main-conatiner">
+      <div class="side-bar">
+        <div class="side-bar-content">
+          <div class="spotifyicon">
+            <a href="https://open.spotify.com/">
+              <img src="./assets/spotifyicon.png" alt="spotifyicon" />
+            </a>
+          </div>
+
+          <div class="nav-item nav-line-seperation">
+            <div class="logo-flex">
+              <img src="./assets/home.png" alt="home" />
+              <p>Home</p>
+            </div>
+
+            <div class="logo-flex">
+              <img src="./assets/search.png" alt="searchicon" />
+              <input type="text" placeholder="Search" id="searchbar" />
+            </div>
+
+            <div class="logo-flex">
+              <img src="./assets/library.png" alt="musiclibrarysection" />
+              <p>Your Library</p>
+            </div>
+          </div>
+
+          <div class="nav-item nav-line-seperation">
+            <div class="logo-flex">
+              <img src="./assets/plussign.png" alt="addbutton" />
+              <p>Create Playlist</p>
+            </div>
+            <div class="logo-flex">
+              <img src="./assets/heart1.png" alt="likedsongs" />
+              <p>Liked Songs</p>
+            </div>
+            <div class="logo-flex">
+              <img src="./assets/spotifymusicpodcast.jpg" alt="podcast" />
+              <p>Episodes</p>
+            </div>
+          </div>
+
+          <div class="side-list">
+            <ul class="nav-line-seperation">
+              <li>FAV</li>
+              <li>Daily mix 1</li>
+              <li>Discover Weekly</li>
+              <li>Malayalam</li>
+              <li>Dance</li>
+              <li>EDM/Popular</li>
+            </ul>
+          </div>
+
+          <div class="logo-flex">
+            <img src="./assets/install.png" alt="install" />
+            <p>Install App</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="music-player">
+        <div class="song-bar">
+          <div class="song-infos">
+            <div class="image-container">
+              <img src="./assets/dream.png" alt="dream" />
+            </div>
+            <div class="song-description">
+              <p class="title">
+                Dreaming On<img src="./assets/heart.png" alt="heart" />
+              </p>
+              <p class="artist">NEFFEX</p>
+            </div>
+          </div>
+        </div>
+        <div class="progress-controller">
+          <div class="control-buttons">
+            <i class="fas fa-random"></i>
+            <i class="fas fa-step-backward"></i>
+            <i class="fa-solid fa-play play-pause"></i>
+            <i class="fas fa-step-forward"></i>
+            <i class="fa-solid fa-repeat fa-beat"></i>
+          </div>
+          <div class="progress-container">
+            <span>2:11</span>
+            <div class="progress-bar">
+              <div class="progress"></div>
+            </div>
+            <span>2:42</span>
+          </div>
+        </div>
+        <div class="other-features">
+          <img src="./assets/microphone.png" alt="microphone" />
+          <img src="./assets/carbonqueryqueue.png" alt="queueicon" />
+          <img src="./assets/laptop.png" alt="laptopicon" />
+          <img src="./assets/speaker.png" alt="speakericon" />
+          <input
+            type="range"
+            class="volum-slider"
+            id="vol"
+            name="vol"
+            min="0"
+            max="50"
+          />
+          <div class="progress-bar">
+            <div class="progress"></div>
+          </div>
+          <img src="./assets/diagonalarrow.png" alt="muteicon" />
+        </div>
+      </div>
+
+      <div class="vector">
+        <img src="./assets/vector.png" alt="vectoricon" />
+      </div>
+
+      <div class="content-area">
+        <div class="profile-header">
+          <div class="main-arrow">
+            <img src="./assets/backward.png" alt="backward" />
+            <img src="./assets/forward.png" alt="forward" />
+          </div>
+          <div class="main-profile">
+            <img src="./assets/profile.png" alt="profile picture" />
+            <p>Angel</p>
+            <i class="fa-solid fa-caret-down" style="color: #ffffff"></i>
+          </div>
+        </div>
+
+        <div class="playlist-artist-area">
+          <h1>Good Morning</h1>
+          <div class="playlist-area">
+            <div class="playlist">
+              <img src="./assets/heart2.png" alt="likedsongs" />
+              <a href="./playlist.html">
+                <p>Liked Songs</p>
+              </a>
+            </div>
+
+            <div class="playlist">
+              <img src="./assets/neffex.png" alt="playlist1" />
+              <a href="./album.html">
+                <p>Neffex Playlist</p>
+              </a>
+            </div>
+
+            <div class="playlist">
+              <img src="./assets/kda.png" alt="playlist2" />
+              <a href="./album.html">
+                <p>K/DA</p>
+              </a>
+            </div>
+
+            <div class="playlist">
+              <img src="./assets/marshmellow.png" alt="playlist3" />
+              <a href="./album.html">
+                <p>Dance/Electronic Mix</p>
+              </a>
+            </div>
+          </div>
+
+          <div class="artist-area">
+            <div class="show-head">
+              <h3>Shows you might like</h3>
+              <p>SEE ALL</p>
+            </div>
+            <div class="shows-you-might-like">
+              <div class="shows">
+                <img src="./assets/weekly.png" alt="show1" />
+                <h4>Weekly Motivatio...</h4>
+                <h5>Ben lna Scott</h5>
+              </div>
+
+              <div class="shows">
+                <img src="./assets/meditation.png" alt="show1" />
+                <h4>MEDITATION SELF</h4>
+                <h5>lbn Hussain Aleen</h5>
+              </div>
+
+              <div class="shows">
+                <img src="./assets/words.png" alt="show1" />
+                <h4>Words beyond act...</h4>
+                <h5>Samuel Scott</h5>
+              </div>
+              <div class="shows">
+                <img src="./assets/alexa.png" alt="show1" />
+                <h4>The Alexa Show</h4>
+                <h5>Adriana Tom</h5>
+              </div>
+
+              <div class="shows">
+                <img src="./assets/alexa.png" alt="show1" />
+                <h4>The Alexa Show</h4>
+                <h5>Adriana Tom</h5>
+              </div>
+
+              <div class="shows">
+                <img src="./assets/alexa.png" alt="show1" />
+                <h4>The Alexa Show</h4>
+                <h5>Adriana Tom</h5>
+              </div>
+              <div class="shows">
+                <img src="./assets/alexa.png" alt="show1" />
+                <h4>The Alexa Show</h4>
+                <h5>Adriana Tom</h5>
+              </div>
+
+              <div class="shows">
+                <img src="./assets/alexa.png" alt="show1" />
+                <h4>The Alexa Show</h4>
+                <h5>Adriana Tom</h5>
+              </div>
+
+              <div class="shows">
+                <img src="./assets/meditation.png" alt="show1" />
+                <h4>MEDITATION SELF</h4>
+                <h5>lbn Hussain Aleen</h5>
+              </div>
+
+              <div class="shows">
+                <img src="./assets/meditation.png" alt="show1" />
+                <h4>MEDITATION SELF</h4>
+                <h5>lbn Hussain Aleen</h5>
+              </div>
+
+              <div class="shows">
+                <img src="./assets/meditation.png" alt="show1" />
+                <h4>MEDITATION SELF</h4>
+                <h5>lbn Hussain Aleen</h5>
+              </div>
+
+              <div class="shows">
+                <img src="./assets/meditation.png" alt="show1" />
+                <h4>MEDITATION SELF</h4>
+                <h5>lbn Hussain Aleen</h5>
+              </div>
+
+              <div class="shows">
+                <img src="./assets/weekly.png" alt="show1" />
+                <h4>Weekly Motivatio...</h4>
+                <h5>Ben lna Scott</h5>
+              </div>
+
+              <div class="shows">
+                <img src="./assets/weekly.png" alt="show1" />
+                <h4>Weekly Motivatio...</h4>
+                <h5>Ben lna Scott</h5>
+              </div>
+
+              <div class="shows">
+                <img src="./assets/weekly.png" alt="show1" />
+                <h4>Weekly Motivatio...</h4>
+                <h5>Ben lna Scott</h5>
+              </div>
+
+              <div class="shows">
+                <img src="./assets/weekly.png" alt="show1" />
+                <h4>Weekly Motivatio...</h4>
+                <h5>Ben lna Scott</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <h5>
+        <i class="fa-solid fa-volume-high"></i> Listening on SAMSUNG GALAXY M-31
+      </h5>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/0b381e01ab.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
